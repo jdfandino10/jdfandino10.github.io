@@ -271,3 +271,14 @@ a.barra-menu:hover {
 h6.project-name{
   font-size: 1em;
 }
+@keyframes colort{
+  from{background-color: white;}
+  to{background-color: #000055;}
+}
+@-webkit-keyframes colort {
+    from {background-color: white;}
+    to {background-color: #000055;}
+ } 
+.main-content table:hover{
+  -webkit-animation:colort;
+}
