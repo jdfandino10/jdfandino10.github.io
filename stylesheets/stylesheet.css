@@ -26,10 +26,6 @@ a.barra-menu{
 a.barra-menu:hover {
     text-decoration: none;
   }
-  @keyframes borde{
-  from{border-color:  rgba(255, 255, 255, 0.2);}
-  to{border-color: white;}
-}
 .btn {
   display: inline-block;
   margin-bottom: 1rem;
@@ -69,16 +65,16 @@ a.barra-menu:hover {
       margin-left: 0; } }
 @keyframes colores{
   from{background-color: white;}
-  to{background-color: #000055;}
+  to{background-color: #159957;}
 }
 @-webkit-keyframes colores {
     from {background-color: white;}
-    to {background-color: #000055;}
+    to {background-color: #159957;}
  } 
 .page-header {
   color: #fff;
   text-align: center;
-  background-color: #000055;
+  background-color: #159957;
   -webkit-animation: colores;
   -webkit-animation-duration: 2s;
 }
@@ -273,12 +269,15 @@ h6.project-name{
 }
 @keyframes colort{
   from{background-color: white;}
-  to{background-color: #000055;}
+  to{background-color: #70E081;}
 }
 @-webkit-keyframes colort {
     from {background-color: white;}
-    to {background-color: #000055;}
+    to {background-color: #70E081;}
  } 
-.main-content table:hover{
-  -webkit-animation:colort;
+.main-content table td:hover{
+  -webkit-animation:colort 2s;
+
+  -webkit-animation-fill-mode:forwards;
+}
 }
