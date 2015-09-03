@@ -275,9 +275,5 @@ h6.project-name{
     from {background-color: white;}
     to {background-color: #70E081;}
  } 
-.main-content table td:hover{
-  -webkit-animation:colort 2s;
 
-  -webkit-animation-fill-mode:forwards;
-}
 }
