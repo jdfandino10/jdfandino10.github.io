@@ -23,19 +23,45 @@ thead{
   color: white;
 }
 .main-image{
+  animation: zoomout 2s;
   border-radius: 50%;
   width: 8em;
   height: 8em;
   border: 2px solid white;
-
 }
 a.barra-menu{
   width: 100%;
   height: 100%;
   color:#000055;
+
 }
 a.barra-menu:hover {
     text-decoration: none;
+  }
+  table.horario tr td:first-of-type{
+    background-color:#159957;
+    color:white;
+    width:20em;
+  }
+  .main-image:hover{
+    animation: zoomin 2s;
+    border-radius: 0%;
+  }
+  @keyframes zoomin{
+    0%{border-radius: 50%;
+      }
+    100%{
+    border-radius: 0%;
+    }
+    
+  }
+  @keyframes zoomout{
+    0%{border-radius: 0%;
+      }
+    100%{
+    border-radius: 50%;
+    }
+    
   }
 .btn {
   display: inline-block;
