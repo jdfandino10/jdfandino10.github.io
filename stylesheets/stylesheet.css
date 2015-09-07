@@ -24,8 +24,9 @@ thead{
 }
 .main-image{
   border-radius: 50%;
-  width: 5em;
-  height: 5em;
+  width: 8em;
+  height: 8em;
+  border: 2px solid white;
 
 }
 a.barra-menu{
