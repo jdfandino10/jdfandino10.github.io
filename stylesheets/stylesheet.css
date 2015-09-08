@@ -23,7 +23,7 @@ thead{
   color: white;
 }
 .main-image{
-  animation: zoomout 2s;
+  animation: zoomout 0.5s;
   border-radius: 50%;
   width: 8em;
   height: 8em;
@@ -44,7 +44,7 @@ a.barra-menu:hover {
     width:20em;
   }
   .main-image:hover{
-    animation: zoomin 2s;
+    animation: zoomin 0.5s;
     border-radius: 0%;
   }
   @keyframes zoomin{
