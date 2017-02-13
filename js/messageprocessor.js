@@ -21,12 +21,12 @@ function send(){
 			msg();
 		}, function(err) {
 			console.log("FAILED. error=", err);
-			msg("No se ha podido enviar...<br>¡Intenta más tarde!", "error");
+			msg("Error... ¡Intenta más tarde!", "error");
 		});
 		
 		var l = document.getElementById("mail-feedback");
 		var loader = document.getElementById("loader");
-		l.innerHTML = "Se está enviando...";
+		l.innerHTML = "Enviando...";
 		l.className = "loading";
 		loader.className = "loader";
 		function msg(msg, cls) {
@@ -36,16 +36,18 @@ function send(){
 			*/
 			var l = document.getElementById("mail-feedback");
 			var loader = document.getElementById("loader");
-			loader.className = "";
+			loader.className += " fade-opacity";
 			l.className = cls||"success";
-			l.innerHTML = msg || "¡El mensaje se ha enviado<br>con éxito!";
+			l.innerHTML = msg || "¡Éxito!";
 			if(!msg){
 				window.setTimeout(fadeText, 1500);
+
 			}
 		}
 
 		function fadeText() {
 			var l = document.getElementById("mail-feedback");
+			var loader = document.getElementById("loader");
 			var nombre = document.getElementById("nombre");
 			var email = document.getElementById("email");
 			var mensaje = document.getElementById("msg");
@@ -53,6 +55,7 @@ function send(){
 			email.className+=" input-white pl-fade";
 			mensaje.className+=" input-white pl-fade";
 			l.className+=" fade-opacity";
+			loader.className="";
 			window.setTimeout(function(){
 				nombre.value="";
 				email.value="";
@@ -66,7 +69,7 @@ function send(){
 					mensaje.classList.remove("pl-fade");
 					var l = document.getElementById("mail-feedback");
 					l.innerHTML="";
-					l.className="";
+					l.className="fade-opacity";
 				},500);	
 			},500)
 		

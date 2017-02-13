@@ -29,13 +29,6 @@ ul.social li {
   margin: 1rem;
 }
 
-label{
-  font-weight: normal;
-  padding-left: 0rem;
-  padding-right: -3rem;
-  padding-top: 1rem;
-  white-space: nowrap;
-}
 /*Animacion loader*/
 .loader {
   border: 16px solid #f3f3f3;
@@ -49,7 +42,8 @@ label{
   -webkit-animation: spin 2s linear infinite;
   animation: spin 2s linear infinite;
   float: left;
-  box-shadow: 0px 0px 10px black; 
+  box-shadow: 0px 0px 10px black;
+  transition: opacity 0.5s; 
 }
 
 @-webkit-keyframes spin {
@@ -103,7 +97,11 @@ label{
 
 }
 
-
+.button-div {
+  float: left;
+  position: relative;
+  padding-left: 15px;
+}
 
 .contacto {
   border: 2px solid #ededed;
@@ -344,26 +342,11 @@ label{
 
 .fade-opacity {
   opacity: 0;
-  transition: opacity 1s;
+  transition: opacity 0.5s;
 }
 
-#mail-feedback{
-  position: relative;
-}
-
-#mail-feedback.error, #mail-feedback.success {
-  text-align: center;
-  top: -14px;
-  left: -50px;
-}
-
-#mail-feedback.loading {
-  left:-5px;
-  top: -5px;
-}
-
-#mail-feedback.success {
-
+#mail-feedback {
+  transition: opacity 0.5s;
 }
 
 .social-icons {
@@ -374,4 +357,24 @@ label{
   padding-right: 0px;
   padding-left: 12.5%;
   padding-top: 25px;
+}
+
+.feedback-div {
+    float: left;
+    position: relative;
+    left: 60px;
+    vertical-align: middle;
+    top: 6.5px;
+}
+
+.loader-div {
+    float: left;
+    position: relative;
+    left: 15px;
+    top: 1px;
+    width: 0px;
+    margin-left: 0px;
+    margin-right: 0px;
+    padding-left: 0px;
+    padding-right: 0px;
 }
