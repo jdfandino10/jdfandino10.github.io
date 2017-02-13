@@ -93,14 +93,17 @@ label{
   transition: stroke-width 0.5s;
 }
 
-
-.icon-animation:hover {
-  stroke: #ededed;
-  stroke-width: 250px;
-  stroke-linecap: "round";
-  paint-order: stroke;
-  transition: stroke-width 0.5s, fill 0.5s;
+@supports (paint-order: stroke) {
+  .icon-animation:hover {
+    stroke: #ededed;
+    stroke-width: 250px;
+    stroke-linecap: "round";
+    paint-order: stroke;
+    transition: stroke-width 0.5s, fill 0.5s;
+  }
 }
+
+
 
 .contacto {
   border: 2px solid #ededed;
