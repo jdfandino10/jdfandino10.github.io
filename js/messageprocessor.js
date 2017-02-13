@@ -30,49 +30,46 @@ function send(){
 		l.className = "loading";
 		loader.className = "loader";
 		function msg(msg, cls) {
-		/* PARA PROBAR
-		msj= "No se ha podido enviar...<br>¡Intenta más tarde!";
-		cls="error"
-		*/
-		var l = document.getElementById("mail-feedback");
-		var loader = document.getElementById("loader");
-		loader.className = "";
-		l.className = cls||"success";
-		l.innerHTML = msg || "¡El mensaje se ha enviado<br>con éxito!";
-		if(!msg){
-			window.setTimeout(fadeText, 1500);
+			/* PARA PROBAR
+			msj= "No se ha podido enviar...<br>¡Intenta más tarde!";
+			cls="error"
+			*/
+			var l = document.getElementById("mail-feedback");
+			var loader = document.getElementById("loader");
+			loader.className = "";
+			l.className = cls||"success";
+			l.innerHTML = msg || "¡El mensaje se ha enviado<br>con éxito!";
+			if(!msg){
+				window.setTimeout(fadeText, 1500);
+			}
 		}
-	}
 
-	function fadeText() {
-		var l = document.getElementById("mail-feedback");
-		var nombre = document.getElementById("nombre");
-		var email = document.getElementById("email");
-		var mensaje = document.getElementById("msg");
-		nombre.className+=" input-white pl-fade";
-		email.className+=" input-white pl-fade";
-		mensaje.className+=" input-white pl-fade";
-		l.className+=" fade-opacity";
-		window.setTimeout(function(){
-			nombre.value="";
-			email.value="";
-			mensaje.value="";
+		function fadeText() {
+			var l = document.getElementById("mail-feedback");
+			var nombre = document.getElementById("nombre");
+			var email = document.getElementById("email");
+			var mensaje = document.getElementById("msg");
+			nombre.className+=" input-white pl-fade";
+			email.className+=" input-white pl-fade";
+			mensaje.className+=" input-white pl-fade";
+			l.className+=" fade-opacity";
 			window.setTimeout(function(){
-				nombre.classList.remove("input-white");
-				email.classList.remove("input-white");
-				mensaje.classList.remove("input-white");
-				nombre.classList.remove("pl-fade");
-				email.classList.remove("pl-fade");
-				mensaje.classList.remove("pl-fade");
-				var l = document.getElementById("mail-feedback");
-				l.innerHTML="";
-				l.className="";
-			},1000);	
-		},1000)
+				nombre.value="";
+				email.value="";
+				mensaje.value="";
+				window.setTimeout(function(){
+					nombre.classList.remove("input-white");
+					email.classList.remove("input-white");
+					mensaje.classList.remove("input-white");
+					nombre.classList.remove("pl-fade");
+					email.classList.remove("pl-fade");
+					mensaje.classList.remove("pl-fade");
+					var l = document.getElementById("mail-feedback");
+					l.innerHTML="";
+					l.className="";
+				},500);	
+			},500)
 		
-	}
-
-
-});
-	
+		}
+	});	
 }
