@@ -1,4 +1,4 @@
-//Codigo para hacer scroll animado, tomado de http://stackoverflow.com/questions/19012495/smooth-scroll-to-div-id-jquery
+//Codigo para hacer scroll animado, adaptado de http://stackoverflow.com/questions/19012495/smooth-scroll-to-div-id-jquery
 // handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {
 	console.log('inside method');
@@ -22,7 +22,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 });
 
 
-//Codigo para animar la barra de navegacion, tomado de https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.89dmd8wue
+//Codigo para animar la barra de navegacion, adaptado de https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.89dmd8wue
 (function(){
 	var didScroll;
 	var lastScrollTop = 0;
