@@ -1,133 +1,208 @@
 <!DOCTYPE html>
-<html lang="en-us">
-  <head>
-    <meta charset="UTF-8">
-    <title>Pagina personal</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="stylesheets/normalize.css" media="screen">
-    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
-    <link rel="stylesheet" type="text/css" href="stylesheets/stylesheet.css" media="screen">
-    <link rel="stylesheet" type="text/css" href="stylesheets/github-light.css" media="screen">
-  </head>
-  <body>
-    <section class="page-header">
-      <h1 class="project-name">Mi Página</h1>
-      <h6 class="project-name">José Daniel Fandiño</h6>
-      <img align="rigth" class="main-image" src="imgs/profilePic.jpg"/>
-      <h2 class="project-tagline"></h2>
-    </section>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>José Daniel Fandiño - Software Engineer</title>
 
-    <section class="main-content">
-      <table class="barra-menu">
-        <tr>
-          <td class="btn"><a class="barra-menu" href="#acerca-de-mi">Acerca de mi</a></td>
-          <td class="btn"><a class="barra-menu" href="#intereses">Intereses</a></td>
-          <td class="btn"><a class="barra-menu" href="#horario">Horario</a></td>
-        </tr>
-      </table>
-      <h3>
-<a id="acerca-de-mi" class="anchor" href="#acerca-de-mi" aria-hidden="true"><span class="octicon octicon-link"></span></a>Acerca de mi</h3>
+  <!-- Bootstrap -->
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
 
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
 
-<p>Soy un estudiante de la universidad de los Andes. Voy en tercer semestre de ingeniería de sistemas, carrera a la cual le he encontrado una gran pasión.</p>
+  <link rel="stylesheet" type="text/css" href="style/style.css">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Playfair+Display">
+  <link rel="stylesheet" type="text/css"
+  href="https://fonts.googleapis.com/css?family=Raleway">
+  <link rel="shortcut icon" type="image/png" href="/boceto.png"/>
+  <script type="text/javascript" src="https://cdn.emailjs.com/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function(){
+        emailjs.init("user_DNshJmh0bD3CjUnbB86tY");
+     })();
+  </script>
+</head>
+<body>
+  <div class="container-fluid web-page">
 
-<h3>
-<a id="intereses" class="anchor" href="#intereses" aria-hidden="true"><span class="octicon octicon-link"></span></a>Intereses</h3>
+    <div class="row navbar nav-down">
+      <div class="col-xs-7 logo-name">
+        <div class="title"><h1>JDF</h1></div>
+        <div class="subtitle"><small>José<br>Daniel<br>Fandiño</small></div>
+      </div>
+      <div class="col-sm-5">
+      <!--
+        <div class="col-xs-3"></div>
+        <a href="#home"><div class="col-xs-3 nav-link cmn-t-underline">Home</div></a>
+        <a href="#experiencia"><div class="col-xs-3 nav-link cmn-t-underline">experiencia</div></a>
+        <a href="#contacto"><div class="col-xs-3 nav-link cmn-t-underline">Contacto</div></a>
+      -->
 
-<ul>
-  <li>Programar</li>
-  <li>Mi mascota</li>
-  <li>Aprender</li>
-</ul>
+      <div class="navbar-header responsive-logo">
+        <button class="navbar-toggle collapsed" type="button" data-toggle="collapse" data-target="#bs-navbar-collapse">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+      </div>
+      <nav class="navbar-collapse collapse" role="navigation" id="bs-navbar-collapse">
+        <ul class="nav navbar-nav navbar-right responsive-nav main-nav-list">
+          <li id="home_u" class="col-xs-4 nav-link cmn-t-underline"><a href="#home">Home</a></li>
+          <li id="experiencia_u" class="col-xs-4 nav-link cmn-t-underline"><a href="#experiencia">Experiencia</a></li>
+          <li id="contacto_u" class="col-xs-4 nav-link cmn-t-underline"><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+      <!-- -->
+    </div>
 
-<h3>
-<a id="horario" class="anchor" href="#horario" aria-hidden="true"><span class="octicon octicon-link"></span></a>Horario</h3>
+  </div><!--row-->
 
-<table class = "horario">
-  <colgroup>
-     <col class="columna-hora">
-   </colgroup>
-  <thead>
-    <th>Hora</th>
-    <th>Lunes</th>
-    <th>Martes</th>
-    <th>Miercoles</th>
-    <th>Jueves</th>
-    <th>Viernes</th>
-  </thead>
-  <tr>
-    <td>7:00-8:20</td>
-    <td></td>
-    <td></td>
-    <td colspan=3>T.I. en las org.</td>
-  </tr>
-  <tr>
-    <td>8:30-9:50</td>
-    <td></td>
-    <td>Lenguajes y máquinas</td>
-    <td>Cupitaller</td>
-    <td>Lenguajes y máquinas</td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>10:00-11:20</td>
-    <td rowspan=2>Cupitaller</td>
-    <td></td>
-    <td>Infratec</td>
-    <td></td>
-    <td>Infratec</td>
-  </tr>
-  <tr>
-    <td>11:30-12:50</td>
-    <td>Estructuras de datos</td>
-    <td></td>
-    <td>Estructuras de datos</td>
-    <td>Lab estructuras</td>
-  </tr>
-  <tr>
-    <td>1:00 - 2:20</td>
-    <td></td>
-    <td rowspan=2>Complementaria Fisica II</td>
-    <td>Fisica II</td>
-    <td rowspan=2>Fisica experimental</td>
-    <td>Fisica II</td>
-  </tr>
-  <tr>
-    <td>2:30 - 2:50</td>
-    <td>Seminario Matematicas</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>3:00 - 4:00</td>
-    <td></td>
-    <td></td>
-    <td>Cupitaller</td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>4:00 - 5:00</td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-    <td></td>
-  </tr>
-  <tr>
-    <td>5:00 - 6:20</td>
-    <td>Fotografía</td>
-    <td></td>
-    <td>Fotografía</td>
-    <td></td>
-    <td></td>
-  </tr>
-</table>
+  <div class="section" id="home">
+    <div class="row section">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-11">
+        <h2 class="section-title">Home</h2>
+      </div>      
+    </div>
+    <div class="row section-content">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <div class="col-xs-12 col-sm-6">
+          <h3>Acerca de</h3>
+          <p>Estudiante Bogotano apasionado por el conocimiento y la tecnología. Perseverante, responsable y confiable. Motivado a aprender sobre lo último en tecnología y cómo aplicarlo para beneficio propio.</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Estudios</h3>
+          <ul>
+            <li>Bachillerato Internacional (2014)</li>
+            <li>Ing. Sistemas - Universidad de los Andes (2014 - presente)</li>
+            <li>Matemáticas - Universidad de los Andes (2015 - presente)</li>
+          </ul>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Habilidades</h3>
+          <p>Conocimiento sobre Java, HTML, CSS, Javascript, Python. Habilidad para trabajar en equipo y perseverancia para lograr mis metas. Bilingüe con pleno dominio del idioma inglés (TOEFL 105/120).</p>
+        </div>
+      </div>
+      <div class="col-xs-1"></div>
+    </div><!--row-->
+  </div>
+
+  <div class="section" id="experiencia">
+    <div class="row section">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-11">
+        <h2 class="section-title">Experiencia</h2>
+      </div>      
+    </div>
+    <div class="row section-content">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <div class="col-xs-12 col-sm-6">
+          <h3>Acerca de</h3>
+          <p>Hola esto es una prueba despues si me pongo a pensar qué hacer aquí</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Estudios</h3>
+          <p>Hola esto es una prueba despues si me pongo a pensar qué hacer aquí</p>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Habilidades</h3>
+          <p>Hola esto es una prueba despues si me pongo a pensar qué hacer aquí</p>
+        </div>
+      </div>
+      <div class="col-xs-1"></div>
+    </div><!--row-->
+  </div>
 
 
-     
+  <div class="section" id="contacto">
+    <div class="row section">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-11">
+        <h2 class="section-title">Contacto</h2>
+      </div>      
+    </div>
+    <div class="row section-content">
+      <div class="col-xs-1"></div>
+      <div class="col-xs-10">
+        <div class="col-xs-12 col-sm-6">
+          <h3>¡Contáctame!</h3>
+          <form id="contact_form">
+            <div class="form-group">
+              <input type="text" class="form-control" id="nombre" placeholder="Nombre" required>
+            </div>
+            <div class="form-group">
+              <input type="email" class="form-control" id="email" placeholder="Email" required>
+            </div>
+            <div class="form-group">
+              <textarea class="form-control" id="msg" placeholder="Mensaje (hasta 315 caracteres)" maxlength="315" form="contact_form" rows="5" required></textarea>
+            </div>
+            <div class="row">
+              <div class="col-xs-3">
+                <button type="submit" class="contacto" onclick="send()">Enviar</button>
+              </div>
+              <div class="col-xs-9 feedback">
+                <div class="row">
+                  <div class="col-xs-3">
+                    <div id="loader" class="fade-opacity"></div>    
+                  </div>
+                  <div class="col-xs-9">
+                    <label id="mail-feedback" class="fade-opacity"></label>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </form>
+        </div>
+        <div class="col-xs-12 col-sm-6">
+          <h3>Redes sociales</h3>
+          <div class="row">
 
-</section>
-  
-  </body>
+            <div class="col-xs-8 imgdiv">
+              <img id="myImg" src="https://avatars2.githubusercontent.com/u/13602479?v=3&s=460" alt="Me"/>
+            </div>
+            <div class="col-xs-4 social-icons">
+              <ul class="social">
+                <li><a href="https://www.facebook.com/Jose.Daniel.F.D" target="_blank"><svg class="icon-facebook-official icon-animation"><use xlink:href="#icon-facebook-official"></use></svg></a></li>
+                <li><a href="https://twitter.com/JosDanielFandi1" target="_blank"><svg class="icon-twitter-square icon-animation"><use xlink:href="#icon-twitter-square"></use></svg></a></li>
+                <li><a href="https://github.com/jdfandino10" target="_blank"><svg class="icon-github-square icon-animation"><use xlink:href="#icon-github-square"></use></svg></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+          
+          
+          
+        </div>
+      </div>
+      <div class="col-xs-1"></div>
+    </div><!--row-->
+  </div>
+
+
+  <div class="row section">
+    <div class="col-xs-1"></div>
+    <div class="col-xs-11">
+      <h2 class="section-title"></h2>
+    </div>      
+  </div>
+
+</div><!--container-->
+
+<div class="footer"><p>Página web de José Daniel Fandiño. By JDF. No se como funciona lo del copyright o lo que sea. &copy; Construída con Bootstrap. Iconos por <a href="http://glyphicons.com/">glyphicons</a> </p></div>
+
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<!-- Latest compiled and minified JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+<script type="text/javascript" src="js/jStuff.js"></script>
+<script type="text/javascript" src="js/messageprocessor.js"></script>
+<script src="https://file.myfontastic.com/SpC6seGBCENwQS5gczYH6h/icons.js"></script>
+</body>
 </html>
