@@ -1,4 +1,10 @@
+/*Conectarse con el API EmailJS*/
+(function(){
+        emailjs.init("user_DNshJmh0bD3CjUnbB86tY");
+ })();
+/*-----------------*/
 
+/* Funcion que se ejecuta al mandar el form*/
 function send(){
 
 	var form = document.getElementById("contact_form");
@@ -23,7 +29,6 @@ function send(){
 		l.innerHTML = "Se está enviando...";
 		l.className = "loading";
 		loader.className = "loader";
-		window.setTimeout(msg,2000);
 		function msg(msg, cls) {
 		/* PARA PROBAR
 		msj= "No se ha podido enviar...<br>¡Intenta más tarde!";
