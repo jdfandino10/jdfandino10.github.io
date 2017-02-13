@@ -68,18 +68,6 @@ label{
   
 }
 
-.icon-facebook-official:hover {
-  fill: #4267b2;
-}
-
-.icon-twitter-square:hover {
-  fill: #1da1f2;
-}
-
-.icon-github-square:hover {
-  fill: #1e2327;
-}
-
 .icon-animation {
   border-radius: 5px;
   height: 5rem;
@@ -101,6 +89,18 @@ label{
     paint-order: stroke;
     transition: stroke-width 0.5s, fill 0.5s;
   }
+  .icon-facebook-official:hover {
+    fill: #4267b2;
+  }
+
+  .icon-twitter-square:hover {
+    fill: #1da1f2;
+  }
+
+  .icon-github-square:hover {
+    fill: #1e2327;
+  }
+
 }
 
 
