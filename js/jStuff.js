@@ -16,7 +16,9 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 
     // top position relative to the document
     var pos = $id.offset().top;
-
+    $("button#collapse-toggler").click();
+    console.log(pos);
+    
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
 });
