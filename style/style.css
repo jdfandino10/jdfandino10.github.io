@@ -385,21 +385,61 @@ ul.navbar-nav {
 }
 
 .feedback-div {
-    float: left;
-    position: relative;
-    left: 60px;
-    vertical-align: middle;
-    top: 6.5px;
+  float: left;
+  position: relative;
+  left: 60px;
+  vertical-align: middle;
+  top: 6.5px;
 }
 
 .loader-div {
-    float: left;
-    position: relative;
-    left: 15px;
-    top: 1px;
-    width: 0px;
-    margin-left: 0px;
-    margin-right: 0px;
-    padding-left: 0px;
-    padding-right: 0px;
+  float: left;
+  position: relative;
+  left: 15px;
+  top: 1px;
+  width: 0px;
+  margin-left: 0px;
+  margin-right: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+}
+
+.jumbo {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  background-color: #98004a;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.jumbo .title {
+  left: 0;
+  line-height: 200px;
+  margin: auto;
+  margin-top: -100px;
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  top: 35%;
+  font-size: 10rem;
+  border-bottom: 2px solid #ededed;
+  z-index: -1;
+  padding: 0;
+}
+
+.home-btn {
+  width: 80px;
+  margin: 40px;
+  background-color: #98004a;
+  z-index: 2;
+}
+
+.btn-container {
+  margin-top: 290px;
+  text-align: center;
+  padding-right: 24px;
 }
