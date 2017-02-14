@@ -1,7 +1,6 @@
 //Codigo para hacer scroll animado, adaptado de http://stackoverflow.com/questions/19012495/smooth-scroll-to-div-id-jquery
 // handle links with @href started with '#' only
 $(document).on('click', 'a[href^="#"]', function(e) {
-	console.log('inside method');
     // target element id
     var id = $(this).attr('href');
 

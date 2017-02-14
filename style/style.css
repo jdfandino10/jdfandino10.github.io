@@ -7,7 +7,7 @@ body {
   background-color: rgba(209, 209, 209, 0.38);
   color: #393939;
   z-index: -1;
-  margin-top: 8rem;
+  margin-top: 78px;
   /*background-image: url("imgs/pattern.jpg");
   background-repeat: all;*/
 }
@@ -118,7 +118,7 @@ ul.social li {
 }
 
 .nav-up {
-  top: -200px !important;
+  top: -100px !important;
 }
 
 
@@ -252,16 +252,21 @@ ul.navbar-nav {
 }
 
 .footer p{
-  padding: 1rem;
   color:rgb(237, 237, 237);
   text-align: center;
   font-size: 0.75em;
   margin-bottom: 1px;
 }
 
+.footer a {
+  font-weight: bold;
+  color:#ededed;
+}
+
 .footer {
   background-color: #98004a;
   margin-bottom: 0;
+  padding: 15px;
 }
 /*
 .cmn-t-underline {
