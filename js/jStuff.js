@@ -27,7 +27,7 @@ $(document).on('click', 'a[href^="#"]', function(e) {
 (function(){
 	var didScroll;
 	var lastScrollTop = 0;
-	var delta = 5;
+	var delta = 30;
 	var navbarHeight = $("div.nav-down").outerHeight();
 
 	// on scroll, let the interval function know the user has scrolled
