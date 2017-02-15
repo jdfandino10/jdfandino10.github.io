@@ -215,6 +215,7 @@ ul.social li {
   padding-left: 2rem;
   text-align: right;
   float: left;
+  cursor: pointer;
 }
 
 .subtitle{
@@ -415,7 +416,8 @@ ul.navbar-nav {
   vertical-align: middle;
 }
 
-.jumbo .title {
+.jumbo .main-title {
+  color: #ededed;
   left: 0;
   line-height: 200px;
   margin: auto;
@@ -442,4 +444,13 @@ ul.navbar-nav {
   margin-top: 290px;
   text-align: center;
   padding-right: 24px;
+}
+
+iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  display: none;
 }

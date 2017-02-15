@@ -20,7 +20,39 @@ $(document).on('click', 'a[href^="#"]', function(e) {
     
     // animated top scrolling
     $('body, html').animate({scrollTop: pos});
-});
+  });
+//Codigo para una transicion suave entre index y pagina y vice versa
+(function(){
+
+  //inicia con todo fadeado
+  $('body').children().fadeOut(0);
+  //hace fade in
+  setTimeout(function(){$('body').children().fadeIn(500);}, 500);
+
+  //En index, al espichar este boton, se fadea y va a la pagina
+  $('button.home-btn').click(function(){
+    $('body').children().fadeOut(500);
+    var s = 'eng.html'
+    if($(this)[0] == $('button.home-btn.es')[0]){
+      s = "es.html";
+    }
+    setTimeout(function(){location.href = s;}, 500);
+
+  });
+
+  //Boton para volver suavemente. No funciona en celular, no se porque...
+  $('div.title').on("click", function(){
+    $('body').children().fadeOut(500);
+    setTimeout(function(){location.href = "index.html";}, 500);
+  });
+  
+
+})();
+
+
+(function(){
+
+})();
 
 
 //Codigo para animar la barra de navegacion, adaptado de https://medium.com/@mariusc23/hide-header-on-scroll-down-show-on-scroll-up-67bbaae9a78c#.89dmd8wue
@@ -61,4 +93,4 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   		}
   		lastScrollTop = st;
   	}
-})();
+  })();
