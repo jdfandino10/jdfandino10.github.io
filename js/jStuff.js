@@ -27,12 +27,15 @@ $(document).on('click', 'a[href^="#"]', function(e) {
   //inicia con todo fadeado
   $('body').children().fadeOut(0);
   //hace fade in
-  setTimeout(function(){$('body').children().fadeIn(500);}, 500);
+  setTimeout(function(){
+    $('body').removeClass("pre");
+    $('body').children().fadeIn(500);
+  }, 500);
 
   //En index, al espichar este boton, se fadea y va a la pagina
   $('button.home-btn').click(function(){
     $('body').children().fadeOut(500);
-    var s = 'eng.html'
+    var s = 'eng.html';
     if($(this)[0] == $('button.home-btn.es')[0]){
       s = "es.html";
     }
