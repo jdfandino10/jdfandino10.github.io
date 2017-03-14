@@ -93,3 +93,13 @@ $(document).on('click', 'a[href^="#"]:not([href="#myCarousel"])', function(e) {
         lastScrollTop = st;
     }
 })();
+
+
+$('.carousel').carousel('pause').on('slide.bs.carousel', function (e) {
+    var nextH = $(e.relatedTarget).height();
+    console.log(nextH)
+    console.log( $(this).find('.active.item').parent() )
+    $(this).find('.active.item').parent().animate({
+        height: nextH
+    });
+});

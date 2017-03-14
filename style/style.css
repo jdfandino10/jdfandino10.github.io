@@ -117,17 +117,23 @@ ul.social li {
 
 .contacto {
     border: 2px solid #ededed;
-    background-color: #7b1f00;
+    background-color: #982600;
     color: #ededed;
     padding: 0.5rem;
     padding-right: 1rem;
     padding-left: 1rem;
-    transition: box-shadow 0.5s;
+    transition: box-shadow 0.5s, background-color 0.5s, color 0.5s;
 }
 
 .contacto:hover {
     box-shadow: 0px 4px 20px #370e01;
     transition: box-shadow 0.25s;
+}
+
+.ctcto:hover {
+    background-color: #ededed;
+    color: #982600;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .nav-up {
@@ -175,6 +181,8 @@ ul.social li {
 
 #experiencia .section-content {
     background-color: #009398;
+    max-height: 50%;
+    transition: height 1s ease;
 }
 
 #contacto .section-content {
@@ -479,8 +487,15 @@ ul.navbar-nav {
 .home-btn {
     width: 80px;
     margin: 30px;
-    background-color: #80003f;
+    background-color: #98004a;
     z-index: 2;
+    transition: background-color 0.5s, color 0.5s;
+}
+
+.home-btn:hover {
+    background-color: #ededed;
+    color: #98004a;
+    transition: background-color 0.5s, color 0.5s;
 }
 
 .btn-container {
@@ -497,7 +512,9 @@ ul.navbar-nav {
 }
 
 .section-content.in-carousel {
+    max-height: 50%;
     box-shadow: 0px 0px 0px black;
+    transition: height 1s ease;
 }
 
 .circle-img {
@@ -507,8 +524,6 @@ ul.navbar-nav {
     width: 80px;
     display: block;
     float: left;
-    padding-right: 10px;
-    transition: height 0.5s, width 0.5s;
 }
 
 .section-content.in-carousel h4,
@@ -520,8 +535,15 @@ ul.navbar-nav {
 
 .row .monitoria {
     padding-bottom: 15px;
+    margin-left: -10px;
+    padding-left: 0;
 }
 
 .section-content.in-carousel {
     text-align: justify-all;
+}
+
+
+h4 {
+    font-weight: bold;
 }
